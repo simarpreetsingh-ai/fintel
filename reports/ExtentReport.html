@@ -1,0 +1,2149 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Crawl API Testing</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">API Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 20, 2026 03:55:53 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:55:54 pm</span> / <span>00:00:03:390</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:55:54 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:55:57 pm</span>
+<span class='badge badge-default'>00:00:03:390</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:55:54 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-5abf-71c5-b556-808eb736e04e
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:55:57 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-5abf-71c5-b556-808eb736e04e",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://crawldemolinksnew.signitydemo.in"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://crawldemolinksnew.signitydemo.in.",
+    "runtimeTaskId": "6528154926304a5390631648beb4f389",
+    "createdAt": "2026-04-20T07:15:17.826Z",
+    "startedAt": "2026-04-20T07:16:18.924Z",
+    "enabledLinkDiscovery": false,
+    "totalLinks": 1,
+    "uniqueLinks": 1,
+    "processedLinks": 1,
+    "failedLinks": 0,
+    "excludedLinks": 0,
+    "duplicateLinks": 0,
+    "depth": 0,
+    "completedAt": "2026-04-20T07:16:28.554Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:55:57 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:55:57 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:55:57 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:55:57 pm</span> / <span>00:00:01:159</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:55:57 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:55:58 pm</span>
+<span class='badge badge-default'>00:00:01:159</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:55:57 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-6063-7182-8ffe-2c9101d757da
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:55:58 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-6063-7182-8ffe-2c9101d757da",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://crawldemolinksnew.signitydemo.in"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://crawldemolinksnew.signitydemo.in.",
+    "runtimeTaskId": "371a7fb9d93a4346aa123c43daea36cd",
+    "createdAt": "2026-04-20T07:15:19.269Z",
+    "startedAt": "2026-04-20T07:16:32.083Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 13,
+    "uniqueLinks": 9,
+    "processedLinks": 5,
+    "failedLinks": 2,
+    "excludedLinks": 4,
+    "duplicateLinks": 2,
+    "depth": 1,
+    "completedAt": "2026-04-20T07:18:18.731Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:55:58 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:55:58 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:55:58 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:55:58 pm</span> / <span>00:00:01:109</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:55:58 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:55:59 pm</span>
+<span class='badge badge-default'>00:00:01:109</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:55:58 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-64c3-70f9-a26c-2bddb9beed1e
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:55:59 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-64c3-70f9-a26c-2bddb9beed1e",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://crawldemolinksnew.signitydemo.in"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://crawldemolinksnew.signitydemo.in.",
+    "runtimeTaskId": "1d128fbdf0ba404a8904fd519393efcd",
+    "createdAt": "2026-04-20T07:15:20.389Z",
+    "startedAt": "2026-04-20T07:16:18.581Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 25,
+    "uniqueLinks": 14,
+    "processedLinks": 6,
+    "failedLinks": 5,
+    "excludedLinks": 8,
+    "duplicateLinks": 6,
+    "depth": 2,
+    "completedAt": "2026-04-20T07:18:37.336Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:55:59 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:55:59 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:55:59 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:55:59 pm</span> / <span>00:00:01:243</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:55:59 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:01 pm</span>
+<span class='badge badge-default'>00:00:01:243</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:55:59 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-6988-71b3-8368-91538e139e81
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:01 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-6988-71b3-8368-91538e139e81",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://crawldemolinksnew.signitydemo.in"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://crawldemolinksnew.signitydemo.in.",
+    "runtimeTaskId": "3a0be1d5bb7e4c258f20d1518450a676",
+    "createdAt": "2026-04-20T07:15:21.610Z",
+    "startedAt": "2026-04-20T07:16:37.027Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 35,
+    "uniqueLinks": 17,
+    "processedLinks": 8,
+    "failedLinks": 6,
+    "excludedLinks": 10,
+    "duplicateLinks": 11,
+    "depth": 3,
+    "completedAt": "2026-04-20T07:19:28.164Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:01 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:01 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:01 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:01 pm</span> / <span>00:00:01:102</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:01 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:02 pm</span>
+<span class='badge badge-default'>00:00:01:102</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:01 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-6e3f-736c-82d2-872eb80c1057
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:02 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-6e3f-736c-82d2-872eb80c1057",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://crawldemolinksnew.signitydemo.in"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://crawldemolinksnew.signitydemo.in.",
+    "runtimeTaskId": "afabf5f1740c48af8fc307c10db0396c",
+    "createdAt": "2026-04-20T07:15:22.817Z",
+    "startedAt": "2026-04-20T07:16:40.358Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 0,
+    "uniqueLinks": 0,
+    "processedLinks": 0,
+    "failedLinks": 0,
+    "excludedLinks": 0,
+    "duplicateLinks": 0,
+    "depth": 0,
+    "completedAt": "2026-04-20T07:17:11.864Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:02 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:02 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:02 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:02 pm</span> / <span>00:00:01:326</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:02 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:03 pm</span>
+<span class='badge badge-default'>00:00:01:326</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:02 pm</td>
+        <td>
+          Starting test for Job ID: N/A
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:03 pm</td>
+        <td>
+          <pre>{
+    "statusCode": 404,
+    "path": "/crawl/status/N%2FA",
+    "message": {
+        "message": "Crawl job with ID N/A not found",
+        "error": "Not Found",
+        "statusCode": 404
+    }
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:56:03 pm</td>
+        <td>
+          Assertion Failed: Status code mismatch! expected [200] but found [404]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:56:03 pm</td>
+        <td>
+          ❌ Test Failed: java.lang.AssertionError: Status code mismatch! expected [200] but found [404]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:56:03 pm</td>
+        <td>
+          Screenshot capture failed: File system element for parameter 'source' does not exist: 'src\test\resources\sample.png'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:03 pm</td>
+        <td>
+          <b>Execution Video:</b><br><video width='400' controls><source src='VideosgetStatus.mp4' type='video/mp4'>Your browser does not support video</video>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:03 pm</span> / <span>00:00:01:238</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:03 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:04 pm</span>
+<span class='badge badge-default'>00:00:01:238</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:03 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-769b-756b-b647-619316dab1d1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:04 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-769b-756b-b647-619316dab1d1",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://crawldemolinksnew.signitydemo.in"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://crawldemolinksnew.signitydemo.in.",
+    "runtimeTaskId": "f27d7d00c1e041f8ac2a1b7833fbf5be",
+    "createdAt": "2026-04-20T07:15:24.958Z",
+    "startedAt": "2026-04-20T07:16:44.597Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 24,
+    "uniqueLinks": 14,
+    "processedLinks": 6,
+    "failedLinks": 5,
+    "excludedLinks": 8,
+    "duplicateLinks": 5,
+    "depth": 2,
+    "completedAt": "2026-04-20T07:18:03.298Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:04 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:04 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:04 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:04 pm</span> / <span>00:00:01:067</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:04 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:05 pm</span>
+<span class='badge badge-default'>00:00:01:067</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:04 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-7b37-744c-83e6-41e78aeb2260
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:05 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-7b37-744c-83e6-41e78aeb2260",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://crawldemolinksnew.signitydemo.in"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://crawldemolinksnew.signitydemo.in.",
+    "runtimeTaskId": "f00471f58ce14d8f8f944832a12c30d0",
+    "createdAt": "2026-04-20T07:15:26.138Z",
+    "startedAt": "2026-04-20T07:16:41.880Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 34,
+    "uniqueLinks": 17,
+    "processedLinks": 8,
+    "failedLinks": 6,
+    "excludedLinks": 10,
+    "duplicateLinks": 10,
+    "depth": 3,
+    "completedAt": "2026-04-20T07:18:09.532Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:05 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:05 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:05 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:05 pm</span> / <span>00:00:01:307</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:05 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:07 pm</span>
+<span class='badge badge-default'>00:00:01:307</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:05 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-7fb0-77b8-a2ad-3a8c797e2729
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:07 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-7fb0-77b8-a2ad-3a8c797e2729",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://apnews.com"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://apnews.com.",
+    "runtimeTaskId": "aa440fff844447319b50daf855c20792",
+    "createdAt": "2026-04-20T07:15:27.283Z",
+    "startedAt": "2026-04-20T07:26:17.273Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 1601,
+    "uniqueLinks": 291,
+    "processedLinks": 247,
+    "failedLinks": 3,
+    "excludedLinks": 45,
+    "duplicateLinks": 1306,
+    "depth": 1,
+    "completedAt": "2026-04-20T10:09:16.164Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:07 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:07 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:07 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:07 pm</span> / <span>00:00:01:073</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:07 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:08 pm</span>
+<span class='badge badge-default'>00:00:01:073</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:07 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-840e-73a5-83ee-03adaeadf46c
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:08 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-840e-73a5-83ee-03adaeadf46c",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://moneyeh.ca"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://moneyeh.ca.",
+    "runtimeTaskId": "23466671281e4208b96ffe50b2f4e655",
+    "createdAt": "2026-04-20T07:15:28.400Z",
+    "startedAt": "2026-04-20T07:26:27.776Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 84,
+    "uniqueLinks": 53,
+    "processedLinks": 52,
+    "failedLinks": 0,
+    "excludedLinks": 2,
+    "duplicateLinks": 30,
+    "depth": 1,
+    "completedAt": "2026-04-20T07:36:41.937Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:08 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:08 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:08 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:08 pm</span> / <span>00:00:01:465</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:08 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:09 pm</span>
+<span class='badge badge-default'>00:00:01:465</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:08 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-88b2-72c5-9cde-1a2f5e0ebfbf
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:09 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-88b2-72c5-9cde-1a2f5e0ebfbf",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://www.buzzfeed.com/ca"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://www.buzzfeed.com/ca.",
+    "runtimeTaskId": "6ff391327e9c4761a09aa70cf5ed9f31",
+    "createdAt": "2026-04-20T07:15:29.589Z",
+    "startedAt": "2026-04-20T07:33:34.693Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 352,
+    "uniqueLinks": 289,
+    "processedLinks": 275,
+    "failedLinks": 1,
+    "excludedLinks": 17,
+    "duplicateLinks": 60,
+    "depth": 1,
+    "completedAt": "2026-04-20T09:34:34.353Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:09 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:09 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:09 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:09 pm</span> / <span>00:00:01:087</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:09 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:10 pm</span>
+<span class='badge badge-default'>00:00:01:087</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:09 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-8d27-742e-ab68-292553fa9f6d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:10 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-8d27-742e-ab68-292553fa9f6d",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://www.python.org"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://www.python.org.",
+    "runtimeTaskId": "f7611e624d584b558672539065020f92",
+    "createdAt": "2026-04-20T07:15:30.730Z",
+    "startedAt": "2026-04-20T07:38:20.471Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 221,
+    "uniqueLinks": 133,
+    "processedLinks": 85,
+    "failedLinks": 5,
+    "excludedLinks": 47,
+    "duplicateLinks": 84,
+    "depth": 1,
+    "completedAt": "2026-04-20T07:52:29.523Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:10 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:10 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:10 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:10 pm</span> / <span>00:00:01:021</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:10 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:11 pm</span>
+<span class='badge badge-default'>00:00:01:021</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:10 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-91c8-705b-8f16-035f9e5893b6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:11 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-91c8-705b-8f16-035f9e5893b6",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://news.ycombinator.com/news"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://news.ycombinator.com/news.",
+    "runtimeTaskId": "bd091c76bb1648b1a9200d388eb4b4dc",
+    "createdAt": "2026-04-20T07:15:31.914Z",
+    "startedAt": "2026-04-20T07:38:05.981Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 228,
+    "uniqueLinks": 194,
+    "processedLinks": 4,
+    "failedLinks": 160,
+    "excludedLinks": 32,
+    "duplicateLinks": 32,
+    "depth": 1,
+    "completedAt": "2026-04-20T07:59:34.842Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:11 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:11 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:11 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:11 pm</span> / <span>00:00:01:199</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:11 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:13 pm</span>
+<span class='badge badge-default'>00:00:01:199</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:11 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-965b-7399-a4fa-2646bb838075
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:12 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-965b-7399-a4fa-2646bb838075",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://stackoverflow.com"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://stackoverflow.com.",
+    "runtimeTaskId": "1db28bd44211459eb7f176e3ad5b347c",
+    "createdAt": "2026-04-20T07:15:33.086Z",
+    "startedAt": "2026-04-20T07:50:14.676Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 0,
+    "uniqueLinks": 0,
+    "processedLinks": 0,
+    "failedLinks": 1,
+    "excludedLinks": 0,
+    "duplicateLinks": 0,
+    "depth": 1,
+    "completedAt": "2026-04-20T07:51:08.920Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:12 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:12 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:13 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:13 pm</span> / <span>00:00:01:091</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:13 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:14 pm</span>
+<span class='badge badge-default'>00:00:01:091</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:13 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-9ade-75c9-96a6-d01287639f01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:14 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-9ade-75c9-96a6-d01287639f01",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://www.geeksforgeeks.org"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://www.geeksforgeeks.org.",
+    "runtimeTaskId": "8bde8f73eea349dc83ba4d3bc816b5c5",
+    "createdAt": "2026-04-20T07:15:34.241Z",
+    "startedAt": "2026-04-20T07:52:47.127Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 90,
+    "uniqueLinks": 76,
+    "processedLinks": 70,
+    "failedLinks": 0,
+    "excludedLinks": 7,
+    "duplicateLinks": 13,
+    "depth": 1,
+    "completedAt": "2026-04-20T08:19:24.405Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:14 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:14 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:14 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:14 pm</span> / <span>00:00:01:044</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:14 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:15 pm</span>
+<span class='badge badge-default'>00:00:01:044</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:14 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-9f6a-7734-b557-63e9b92e7d19
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:15 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-9f6a-7734-b557-63e9b92e7d19",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://crawler-test.com/"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://crawler-test.com/.",
+    "runtimeTaskId": "fa681b520df64434aca21d1fd864c057",
+    "createdAt": "2026-04-20T07:15:35.404Z",
+    "startedAt": "2026-04-20T07:52:57.563Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 416,
+    "uniqueLinks": 408,
+    "processedLinks": 289,
+    "failedLinks": 118,
+    "excludedLinks": 3,
+    "duplicateLinks": 6,
+    "depth": 1,
+    "completedAt": "2026-04-20T08:55:19.376Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:15 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:15 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:15 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:15 pm</span> / <span>00:00:01:090</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:15 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:16 pm</span>
+<span class='badge badge-default'>00:00:01:090</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:15 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-a410-749e-ae16-ec8e8c49ed79
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:16 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-a410-749e-ae16-ec8e8c49ed79",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://merdeka.com"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://merdeka.com.",
+    "runtimeTaskId": "9c7d918407654e3792da56a8a4fda341",
+    "createdAt": "2026-04-20T07:15:36.594Z",
+    "startedAt": "2026-04-20T07:53:57.793Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 350,
+    "uniqueLinks": 156,
+    "processedLinks": 138,
+    "failedLinks": 0,
+    "excludedLinks": 21,
+    "duplicateLinks": 191,
+    "depth": 1,
+    "completedAt": "2026-04-20T08:25:47.084Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:16 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:16 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:16 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:16 pm</span> / <span>00:00:01:056</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:16 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:17 pm</span>
+<span class='badge badge-default'>00:00:01:056</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:16 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-a8f5-7709-b536-c18c4343301e
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:17 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-a8f5-7709-b536-c18c4343301e",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://milesopedia.com"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://milesopedia.com.",
+    "runtimeTaskId": "c59911e2f3cd45ca9b6cdfff6a2a7e2b",
+    "createdAt": "2026-04-20T07:15:37.847Z",
+    "startedAt": "2026-04-20T07:55:02.821Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 517,
+    "uniqueLinks": 206,
+    "processedLinks": 186,
+    "failedLinks": 8,
+    "excludedLinks": 15,
+    "duplicateLinks": 308,
+    "depth": 1,
+    "completedAt": "2026-04-20T08:45:25.019Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:17 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:17 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:17 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:17 pm</span> / <span>00:00:01:081</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:17 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:18 pm</span>
+<span class='badge badge-default'>00:00:01:081</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:17 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-ad58-75b8-b907-7a73b29e3d86
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:18 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-ad58-75b8-b907-7a73b29e3d86",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://milesopedia.typeform.com"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://milesopedia.typeform.com.",
+    "runtimeTaskId": "5d4a76d8cb8e4c34800bf9c4be2e471d",
+    "createdAt": "2026-04-20T07:15:38.971Z",
+    "startedAt": "2026-04-20T08:01:03.783Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 143,
+    "uniqueLinks": 119,
+    "processedLinks": 99,
+    "failedLinks": 10,
+    "excludedLinks": 11,
+    "duplicateLinks": 23,
+    "depth": 1,
+    "completedAt": "2026-04-20T08:35:44.285Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:18 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:18 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:18 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:18 pm</span> / <span>00:00:01:068</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:18 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:19 pm</span>
+<span class='badge badge-default'>00:00:01:068</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:18 pm</td>
+        <td>
+          Starting test for Job ID: 019da9be-b195-70d6-85c0-4e3d897767c9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:19 pm</td>
+        <td>
+          <pre>{
+    "jobId": "019da9be-b195-70d6-85c0-4e3d897767c9",
+    "merchantId": "merchant_simar",
+    "domain": [
+        "https://modrinth.com"
+    ],
+    "status": "completed",
+    "message": "Crawling process is successfully completed for https://modrinth.com.",
+    "runtimeTaskId": "46b31de5ded441009ecf7d99ba9b5816",
+    "createdAt": "2026-04-20T07:15:40.056Z",
+    "startedAt": "2026-04-20T08:07:55.505Z",
+    "enabledLinkDiscovery": true,
+    "totalLinks": 142,
+    "uniqueLinks": 88,
+    "processedLinks": 76,
+    "failedLinks": 3,
+    "excludedLinks": 9,
+    "duplicateLinks": 54,
+    "depth": 1,
+    "completedAt": "2026-04-20T08:29:56.719Z"
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:19 pm</td>
+        <td>
+          Status Code is valid: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:19 pm</td>
+        <td>
+          Job Status: completed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:56:19 pm</td>
+        <td>
+          ✅ Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:19 pm</span> / <span>00:00:01:019</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:19 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:20 pm</span>
+<span class='badge badge-default'>00:00:01:019</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:19 pm</td>
+        <td>
+          Starting test for Job ID: N/A
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:20 pm</td>
+        <td>
+          <pre>{
+    "statusCode": 404,
+    "path": "/crawl/status/N%2FA",
+    "message": {
+        "message": "Crawl job with ID N/A not found",
+        "error": "Not Found",
+        "statusCode": 404
+    }
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:56:20 pm</td>
+        <td>
+          Assertion Failed: Status code mismatch! expected [200] but found [404]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:56:20 pm</td>
+        <td>
+          ❌ Test Failed: java.lang.AssertionError: Status code mismatch! expected [200] but found [404]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:56:20 pm</td>
+        <td>
+          Screenshot capture failed: File system element for parameter 'source' does not exist: 'src\test\resources\sample.png'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:20 pm</td>
+        <td>
+          <b>Execution Video:</b><br><video width='400' controls><source src='VideosgetStatus.mp4' type='video/mp4'>Your browser does not support video</video>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getStatus</p>
+            <p class="text-sm">
+              <span>3:56:20 pm</span> / <span>00:00:00:992</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">getStatus</h5>
+<span class='badge badge-success'>04.20.2026 3:56:20 pm</span>
+<span class='badge badge-danger'>04.20.2026 3:56:21 pm</span>
+<span class='badge badge-default'>00:00:00:992</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:20 pm</td>
+        <td>
+          Starting test for Job ID: N/A
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:21 pm</td>
+        <td>
+          <pre>{
+    "statusCode": 404,
+    "path": "/crawl/status/N%2FA",
+    "message": {
+        "message": "Crawl job with ID N/A not found",
+        "error": "Not Found",
+        "statusCode": 404
+    }
+}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:56:21 pm</td>
+        <td>
+          Assertion Failed: Status code mismatch! expected [200] but found [404]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:56:21 pm</td>
+        <td>
+          ❌ Test Failed: java.lang.AssertionError: Status code mismatch! expected [200] but found [404]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:56:21 pm</td>
+        <td>
+          Screenshot capture failed: File system element for parameter 'source' does not exist: 'src\test\resources\sample.png'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:56:21 pm</td>
+        <td>
+          <b>Execution Video:</b><br><video width='400' controls><source src='VideosgetStatus.mp4' type='video/mp4'>Your browser does not support video</video>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 20, 2026 03:55:53 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 20, 2026 03:56:22 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>19</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='86%'>
+<b>19</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='13%'><b>3</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'><b>57</b> events passed</small></div>
+<div>
+<small data-tooltip='7%'><b>9</b> events failed,
+<b data-tooltip='%'>47</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"getStatus":3.39,"getStatus":1.159,"getStatus":1.109,"getStatus":1.243,"getStatus":1.102,"getStatus":1.326,"getStatus":1.238,"getStatus":1.067,"getStatus":1.307,"getStatus":1.073,"getStatus":1.465,"getStatus":1.087,"getStatus":1.021,"getStatus":1.199,"getStatus":1.091,"getStatus":1.044,"getStatus":1.09,"getStatus":1.056,"getStatus":1.081,"getStatus":1.068,"getStatus":1.019,"getStatus":0.992
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 19,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 57,
+failEvents: 9,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 47
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
