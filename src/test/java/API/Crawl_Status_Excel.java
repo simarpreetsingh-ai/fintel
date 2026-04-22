@@ -50,6 +50,7 @@ public class Crawl_Status_Excel {
         header.createCell(0).setCellValue("Job ID");
         header.createCell(1).setCellValue("Status");
         header.createCell(2).setCellValue("Status Code");
+        header.createCell(3).setCellValue("Response");
 
         fis.close();
     }
@@ -96,6 +97,7 @@ public class Crawl_Status_Excel {
             row.createCell(0).setCellValue(jobId);
             row.createCell(1).setCellValue(jobStatus);
             row.createCell(2).setCellValue(statusCode);
+            row.createCell(3).setCellValue(response.asPrettyString());
 
         } catch (AssertionError ae) {
             test.fail("Assertion Failed: " + ae.getMessage());
