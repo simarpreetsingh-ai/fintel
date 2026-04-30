@@ -9,8 +9,8 @@
       <class name="API.Crawl_Status_Excel">
         <methods>
           <include name="saveExcel"/>
+          <include name="getStatus" invocation-numbers="9"/>
           <include name="setupExcel"/>
-          <include name="getStatus" invocation-numbers="1 19 4 20 5 8 9 11 12 13"/>
         </methods>
       </class> <!-- API.Crawl_Status_Excel -->
     </classes>

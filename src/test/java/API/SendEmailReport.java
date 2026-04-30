@@ -12,7 +12,7 @@ import java.util.Properties;
 	    public static void sendReport() {
 	        final String fromEmail = "simarpreet.singh@signitysolutions.com";
 	        final String password = "oledwogvrvebbvud";
-	        final String toEmail = "ssimarpreet.ssingh@gmail.com,simarpreet.singh@signitysolutions.com,dhwani.dhamija@signitysolutions.com";
+	        final String toEmail = "simarpreet.singh@signitysolutions.com,palak.singla@signitysolutions.in,ashwani@signitysolutions.com,sanjeev@signitysolutions.in";
 
 	        Properties props = new Properties();
 	        props.put("mail.smtp.auth", "true");
@@ -33,7 +33,7 @@ import java.util.Properties;
 	            message.setSubject("Automation Test Execution Report");
 
 	            BodyPart messageBodyPart = new MimeBodyPart();
-	            messageBodyPart.setText("Hi,\n\nPlease find the attached automation execution report.\n\nRegards,");
+	            messageBodyPart.setText("Hi,\n\nPlease find the attached FIntel automation execution report.\n\nRegards,\nSimarpreet Singh");
 
 	            MimeBodyPart attachmentPart = new MimeBodyPart();
 	            String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport.html";
