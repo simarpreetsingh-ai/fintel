@@ -13,7 +13,7 @@ import com.aventstack.extentreports.ExtentTest;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-public class Crawl_Status_Excel {
+public class Crawl_Status_Excel extends TestBase {
 
     Workbook workbook;
     Sheet sheet;
