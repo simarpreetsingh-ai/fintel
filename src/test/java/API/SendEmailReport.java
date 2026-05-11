@@ -12,7 +12,7 @@ import java.util.Properties;
 	    public static void sendReport() {
 	        final String fromEmail = "simarpreet.singh@signitysolutions.com";
 	        final String password = "oledwogvrvebbvud";
-	        final String toEmail = "simarpreet.singh@signitysolutions.com,palak.singla@signitysolutions.in,ashwani@signitysolutions.com,sanjeev@signitysolutions.in";
+	        final String toEmail = "simarpreet.singh@signitysolutions.com";
 
 	        Properties props = new Properties();
 	        props.put("mail.smtp.auth", "true");
