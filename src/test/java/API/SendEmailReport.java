@@ -13,7 +13,11 @@ import java.util.Properties;
 	        final String fromEmail = "simarpreet.singh@signitysolutions.com";
 	        final String password = "oledwogvrvebbvud";
 	        final String toEmail = "simarpreet.singh@signitysolutions.com";
+<<<<<<< HEAD
 
+=======
+           //palak.singla@signitysolutions.in,ashwani@signitysolutions.com,sanjeev@signitysolutions.in
+>>>>>>> 380675f (new response file)
 	        Properties props = new Properties();
 	        props.put("mail.smtp.auth", "true");
 	        props.put("mail.smtp.starttls.enable", "true");

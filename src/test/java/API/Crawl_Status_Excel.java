@@ -21,6 +21,7 @@ public class Crawl_Status_Excel extends BaseTest {
     String filePath = "src/test/resources/response.xlsx";
 
     int rowCounter = 1; // start after header
+    int processedCount = 0; // counter for processed records
 
     // ✅ DataProvider
     @DataProvider(name = "excelData")
@@ -65,6 +66,7 @@ public class Crawl_Status_Excel extends BaseTest {
         test.info("Starting test for Job ID: " + jobId);
 
         try {
+
             Response response = RestAssured
                     .given()
                         .baseUri("https://webcrawler.qa3.fintelsandbox.com")
@@ -85,7 +87,7 @@ public class Crawl_Status_Excel extends BaseTest {
 
             test.info("<pre>" + response.asPrettyString() + "</pre>");
 
-            // ✅ ASSERTION (THIS FIXES YOUR ISSUE)
+            // ✅ Assertion
             Assert.assertEquals(statusCode, 200, "Status code mismatch!");
 
             // ✅ Extent logging
@@ -99,12 +101,32 @@ public class Crawl_Status_Excel extends BaseTest {
             row.createCell(2).setCellValue(statusCode);
             row.createCell(3).setCellValue(response.asPrettyString());
 
+            // ✅ Increment processed counter
+            processedCount++;
+
+            // ✅ Wait for 5 seconds after every 20 records
+            if (processedCount % 20 == 0) {
+
+                System.out.println("======================================");
+                System.out.println("Processed " + processedCount + " records");
+                System.out.println("Waiting for 9 seconds...");
+                System.out.println("======================================");
+
+                test.info("Processed " + processedCount + " records. Waiting for 5 seconds...");
+
+                Thread.sleep(9000);
+            }
+
         } catch (AssertionError ae) {
+
             test.fail("Assertion Failed: " + ae.getMessage());
-            throw ae; // ✅ Important: fail test in TestNG
+            throw ae;
+
         } catch (Exception e) {
+
             test.fail("Exception: " + e.getMessage());
             e.printStackTrace();
+
             Assert.fail("Test failed due to exception");
         }
     }
