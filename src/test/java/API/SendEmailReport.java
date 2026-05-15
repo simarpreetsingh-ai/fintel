@@ -11,11 +11,11 @@ public class SendEmailReport {
 
         final String fromEmail = "simarpreet.singh@signitysolutions.com";
         final String password = "oledwogvrvebbvud";
-        final String toEmail = "simarpreet.singh@signitysolutions.com";
+        final String toEmail = "simarpreet.singh@signitysolutions.com,palak.singla@signitysolutions.in,ashwani@signitysolutions.com,sanjeev@signitysolutions.in";
 
         // palak.singla@signitysolutions.in,
         // ashwani@signitysolutions.com,
-        // sanjeev@signitysolutions.in
+        // ,sanjeev@signitysolutions.in
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
