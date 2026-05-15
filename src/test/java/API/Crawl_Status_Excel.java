@@ -109,12 +109,12 @@ public class Crawl_Status_Excel extends BaseTest {
 
                 System.out.println("======================================");
                 System.out.println("Processed " + processedCount + " records");
-                System.out.println("Waiting for 9 seconds...");
+                System.out.println("Waiting for 20 seconds...");
                 System.out.println("======================================");
 
                 test.info("Processed " + processedCount + " records. Waiting for 5 seconds...");
 
-                Thread.sleep(9000);
+                Thread.sleep(20000);
             }
 
         } catch (AssertionError ae) {
